@@ -40,6 +40,7 @@ function addname(){
   
   
 }
+
 var cells = (table.getElementsByTagName("td"));
 for (let cell of cells) {
   cell.addEventListener('copy',copy);

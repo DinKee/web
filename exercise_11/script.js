@@ -28,3 +28,32 @@ $('#slide').slider({
     }
 });
 
+//set tabs
+$('#my_tabs').tabs({
+    event: 'mouseover',
+    heightstyle: 'fill',
+    show: 'slideDown'});
+
+//set dialogs
+$('#LuckyDialog').dialog({
+    autoOpen: false
+});
+$('#AveDialog').dialog({
+    autoOpen: false
+});
+$('#UnluckyDialog').dialog({
+    autoOpen: false
+});
+
+//set btn event
+$('#fbtn').click(function(){
+    var rand = Math.random();
+    console.log(rand);
+    if (rand < 0.1 )
+        $('#LuckyDialog').dialog('open');
+    else if(rand>=0.1 && rand < 0.2)
+        $('#UnluckyDialog').dialog('open');
+    else
+        $('#AveDialog').dialog('open');
+})
+

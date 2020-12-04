@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--Sep. 23, 2020-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>E14056091</title>
+    </head>
+    <body>
+        <h1> My Dream House </h1>
+        <form name="House" method="POST">
+            <fieldset>
+                <legend>Location</legend>
+                <label>Zipcode:<input name="zipcode" type="text" size="5" pattern="[0-9]{3}"></label><br>
+                <label>Address 1:<input name="address_1" type="text" size="50" maxlength="20" placeholder="Address longer than 20 characters, use the address 2"></label><br>
+                <label>Address 2:<textarea name="address_2" rows="5" cols="20"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Preference</legend>
+                <label>Painting Color:<input name="color"type="color" value="#0000ff"></label><br>
+                <label>Time you want to visit Open House:<input name="type" type="time" min="10:00" max="16:00"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact me</legend>
+                <label>Name:<input name="name" type="text" pattern="[a-z]{4,}"></label><br>
+                <label>Phone:<input name="phone" type="text" pattern="[0-9]{7,}"></label>
+            </fieldset>
+            <input type="submit" action="http://httpbin.org/post" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
