@@ -17,20 +17,34 @@ html,body {
     font-size: 0px;
 }
 
-#time, #bombLeft {
+#time {
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    left: -105%;
+    top: -100%;
+}
+
+#bombLeft {
+    
+    position: absolute;
+    left: 105%;
+    width: fit-content;
+}
+
+.top_bar div{
     display: inline-block;
-    width: 50%;
-    border-style: border-box;
-    font-size: initial;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
 }
 
 #gameSetting {
+    width: fit-content;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: initial;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #gamePlace img {
