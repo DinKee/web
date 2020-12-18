@@ -1,5 +1,5 @@
 * {
-    /* border: solid 1px #eee;   */
+    /* border: solid 1px black;   */
     position: relative;
 }
 
@@ -206,3 +206,36 @@ border: solid 3px #F24;
     margin: 10px 5px;
     left: 5%;
 }
+
+/* Section About me */
+#about_me {
+    border: solid 1px black;
+    color: #333;
+    height: fit-content;
+}
+/* title */
+.title {
+    font-size: 30px;
+}
+/* block */
+.block{
+    width: 30%;
+    left: 50%;
+    right: 2%;
+    transition-duration: 0.8s
+}
+.block:hover {
+    transform: translateY(-0) translateX(0);
+    box-shadow: 10px 10px 30px rgba(50,50,50,0.3);
+    background-color: rgba(204,188,155,0.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+h6 {
+    font-weight: 300;
+    font-family: "Noto Sans TC", sans-serif;
+    letter-spacing: 2px;
+}
+
+/* info */

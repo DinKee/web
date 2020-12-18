@@ -51,10 +51,12 @@
 		//用 h3 標示方向
         // $('<h3></h3>').text(this.Direction).appendTo(div);
         //用 h3 標示附屬路線名稱
-        $('<h3></h3>').append('路線:').text(this.SubRouteName.Zh_tw).appendTo(div);
+        // var route = text(this.SubRouteName.Zh_tw);
+        $('<h3></h3>').append('路線:' + this.SubRouteName.Zh_tw).appendTo(div);
         console.log('路線:',this.SubRouteName.Zh_tw);
         //用 h3 標示站牌名稱
-        $('<h3></h3>').append('站名:').text(this.StopName.Zh_tw).appendTo(div);
+        // var stop = text(this.StopName.Zh_tw)
+        $('<h3></h3>').append('站名:' + this.StopName.Zh_tw).appendTo(div);
         console.log('站名:',this.StopName.Zh_tw);
 		
         //用 h2 標示 到站時間預估(秒)
