@@ -1,24 +1,35 @@
 * {
-    /* border: solid 1px black;   */
+    /* border: solid 1px #eee;   */
     position: relative;
+    /* box-sizing: border-box; */
 }
 
 html, body {
     padding: 0px;
     margin: 0px;
     height: 100%;
+    width: 100%;
 }
 
-section {
+section , footer{
     width: 100%;
     height: 100%;
     color: #eee;
     font-family: 'Russo One', sans-serif, 微軟正黑體;
 }
-#main {
+body{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     background-color: rgba(255,255,255,0.3);
+}
+/* #main ,#about_me, footer{
+    
+} */
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #eee;
 }
 /* navigation bar */
 nav div {
@@ -177,11 +188,11 @@ border: solid 3px #F24;
     letter-spacing:0.5px;
     padding:1px;
 }
-.page_title{
+/* .page_title{
     text-align : center;
     color:#555;
     font-weight:500px;
-}
+} */
 .mark{
     font-size:300px;
     position:absolute;
@@ -205,29 +216,36 @@ border: solid 3px #F24;
     font-size: 30px;
     margin: 10px 5px;
     left: 5%;
+    width: fit-content;
 }
 
-/* Section About me */
+/*                 Section About me                     */
 #about_me {
-    border: solid 1px black;
-    color: #333;
-    height: fit-content;
+    height: 120%;
+}
+.block, .icons{
+    display: inline-block;
 }
 /* title */
-.title {
+.page_title {
     font-size: 30px;
+    left: 20px;
+    width: fit-content;
 }
 /* block */
-.block{
-    width: 30%;
-    left: 50%;
-    right: 2%;
-    transition-duration: 0.8s
+.block {
+    position: absolute;
+    width: 550px;
+    right: 10%;
 }
-.block:hover {
+.block > div {
+    transition-duration: 0.8s;
+    padding: 15px;
+}
+.block > div:hover {
     transform: translateY(-0) translateX(0);
     box-shadow: 10px 10px 30px rgba(50,50,50,0.3);
-    background-color: rgba(204,188,155,0.2);
+    background-color: rgba(40, 59, 92, 0.8);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -237,5 +255,57 @@ h6 {
     font-family: "Noto Sans TC", sans-serif;
     letter-spacing: 2px;
 }
+.title {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
 
 /* info */
+
+/* icons */
+.icons {
+    width: 300px;
+    left: 15%;
+    top:15%;
+}
+.icon{
+    margin-top: 15px;
+    font-size: 0px;
+}
+.icon img {
+    height: 100px;
+    
+}
+.back{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90%;
+    background-color: #eee;   
+}
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    top: 0px;
+}
+footer div{
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 0px;
+}
+hr {
+    width: 300px;
+    margin-top: 0px;
+    transition-duration: 0.5s;
+}
+footer:hover hr{
+    width: 700px;
+}
+
